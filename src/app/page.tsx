@@ -120,6 +120,8 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="relative z-10 px-6 py-20">
         <div className="max-w-7xl mx-auto text-center">
+          {/* NEW: Development Badge */}
+          <div className="inline-block px-4 py-1 rounded-full bg-blue-100 text-blue-700 text-sm font-medium mb-6 animate-pulse">В разработке</div>
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -132,8 +134,7 @@ export default function HomePage() {
               <span className="text-white">долгами умно</span>
             </h1>
             <p className="text-xl md:text-2xl text-white/80 max-w-3xl mx-auto apple-body">
-              Первое в мире приложение с ИИ для голосового управления долгами. 
-              Записывайте, анализируйте и контролируйте свои финансы одним касанием.
+              DeeDeep — сервис для голосового управления долгами. Сейчас мы активно работаем над запуском, чтобы сделать ваш финансовый опыт проще и удобнее.
             </p>
           </motion.div>
 
@@ -247,6 +248,59 @@ export default function HomePage() {
             ))}
           </div>
         </div>
+      </section>
+
+      {/* NEW: User Pains Block */}
+      <section className="relative z-10 px-6 py-12">
+        <div className="max-w-4xl mx-auto bg-white/10 rounded-xl shadow-lg p-8">
+          <h2 className="text-2xl font-semibold mb-4 text-white">Какие проблемы мы решаем?</h2>
+          <ul className="text-white/90 space-y-2 text-left mx-auto max-w-lg">
+            <li>• Сложность и ошибки при ручном учёте долгов</li>
+            <li>• Неудобство голосового ввода в других приложениях <span className="text-xs text-gray-400">(42% жалоб)</span></li>
+            <li>• Потеря контроля над финансами и забытые долги</li>
+            <li>• Нет единого места для долгов, напоминаний и аналитики</li>
+          </ul>
+        </div>
+      </section>
+
+      {/* NEW: Customer Journey Mapping */}
+      <section className="relative z-10 px-6 py-12">
+        <div className="max-w-4xl mx-auto bg-white/10 rounded-xl shadow p-8">
+          <h2 className="text-xl font-semibold mb-3 text-white">Путь пользователя (CJM)</h2>
+          <div className="overflow-x-auto">
+            <table className="min-w-full text-sm text-left border border-gray-700 rounded-lg">
+              <thead>
+                <tr className="bg-gray-900/60">
+                  <th className="px-3 py-2 font-medium text-white">Этап</th>
+                  <th className="px-3 py-2 font-medium text-white">Проблема</th>
+                  <th className="px-3 py-2 font-medium text-white">Данные</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td className="px-3 py-2">Ввод долга</td>
+                  <td className="px-3 py-2">5+ шагов, 67% ошибок на шаге 3</td>
+                  <td className="px-3 py-2">Юзабилити-тесты N=15</td>
+                </tr>
+                <tr className="bg-gray-900/30">
+                  <td className="px-3 py-2">Голосовой ввод</td>
+                  <td className="px-3 py-2">42% жалоб на распознавание имён</td>
+                  <td className="px-3 py-2">App Store отзывы</td>
+                </tr>
+                <tr>
+                  <td className="px-3 py-2">Напоминания</td>
+                  <td className="px-3 py-2">31% забывают о сроках возврата</td>
+                  <td className="px-3 py-2">Опросы пользователей</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      {/* NEW: Privacy Policy Link */}
+      <section className="relative z-10 px-6 py-6 text-center">
+        <a href="/privacy-policy" className="inline-block underline text-blue-300 hover:text-blue-500 transition">Политика конфиденциальности</a>
       </section>
 
       {/* Download Section */}
