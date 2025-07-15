@@ -27,21 +27,21 @@ export default function HomePage() {
       description: "Записывайте долги голосом и получайте мгновенную расшифровку с помощью нейросети",
       icon: "🎤",
       gradient: "from-purple-500 to-pink-500",
-      stats: "2.3 сек"
+      stats: "менее 100 мс"
     },
     {
-      title: "Умная аналитика",
-      description: "Анализируйте свои долги и получайте персональные рекомендации по управлению финансами",
-      icon: "📊",
+      title: "Полностью оффлайн",
+      description: "Приложение работает без интернета. Все данные хранятся локально на вашем устройстве",
+      icon: "📱",
       gradient: "from-blue-500 to-cyan-500",
-      stats: "98% точность"
+      stats: "100% приватность"
     },
     {
-      title: "Банковская безопасность",
-      description: "Ваши данные защищены криптографией военного уровня и соответствуют стандартам PCI DSS",
-      icon: "🔒",
+      title: "Абсолютно бесплатно",
+      description: "Никаких подписок и скрытых платежей. Все функции доступны бесплатно навсегда",
+      icon: "💎",
       gradient: "from-emerald-500 to-teal-500",
-      stats: "256-bit AES"
+      stats: "0₽ всегда"
     }
   ];
 
@@ -49,19 +49,19 @@ export default function HomePage() {
     {
       name: "Александр К.",
       role: "Предприниматель",
-      text: "DeeDeep сэкономил мне 3 часа в неделю на управлении долгами. Рекомендую всем!",
+      text: "DeeDeep сэкономил мне 3 часа в неделю на управлении долгами. И это бесплатно!",
       rating: 5
     },
     {
       name: "Мария С.",
       role: "Финансовый консультант",
-      text: "Лучшее приложение для управления долгами. Голосовой ввод работает идеально.",
+      text: "Лучшее приложение для управления долгами. Работает оффлайн и полностью бесплатно.",
       rating: 5
     },
     {
       name: "Дмитрий В.",
       role: "Инвестор",
-      text: "Умная аналитика помогла мне оптимизировать долговую нагрузку на 40%.",
+      text: "Умная аналитика помогла мне оптимизировать долговую нагрузку. И всё это бесплатно!",
       rating: 5
     }
   ];
@@ -113,16 +113,8 @@ export default function HomePage() {
           <div className="hidden md:flex space-x-8 slide-up">
             <a href="#features" className="text-white/80 hover:text-white transition-all duration-300 hover:scale-105">Возможности</a>
             <a href="#testimonials" className="text-white/80 hover:text-white transition-all duration-300 hover:scale-105">Отзывы</a>
-            <a href="#pricing" className="text-white/80 hover:text-white transition-all duration-300 hover:scale-105">Тарифы</a>
             <a href="#download" className="text-white/80 hover:text-white transition-all duration-300 hover:scale-105">Скачать</a>
           </div>
-
-          <button className="premium-button px-8 py-4 rounded-2xl scale-in">
-            <span className="flex items-center space-x-2">
-              <span>Попробовать бесплатно</span>
-              <span className="text-lg">→</span>
-            </span>
-          </button>
         </div>
       </nav>
 
@@ -143,7 +135,7 @@ export default function HomePage() {
             </h1>
             <p className="text-2xl md:text-3xl text-white/80 max-w-4xl mx-auto premium-body leading-relaxed">
               Первое приложение для голосового управления долгами на iOS. 
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 font-semibold"> Экономьте время и деньги.</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 font-semibold"> Бесплатно и оффлайн.</span>
             </p>
           </div>
 
@@ -151,7 +143,7 @@ export default function HomePage() {
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-20 slide-up">
             <button className="premium-button-large px-12 py-6 text-xl rounded-2xl hover-lift-premium">
               <span className="flex items-center space-x-3">
-                <span>Скачать для iOS</span>
+                <span>Скачать бесплатно</span>
                 <span className="text-2xl">📱</span>
               </span>
             </button>
@@ -170,12 +162,12 @@ export default function HomePage() {
               <div className="text-white/60">Ожидающих пользователей</div>
             </div>
             <div className="premium-stat-card">
-              <div className="text-4xl font-bold premium-gradient-text">98%</div>
-              <div className="text-white/60">Точность распознавания</div>
+              <div className="text-4xl font-bold premium-gradient-text">100%</div>
+              <div className="text-white/60">Оффлайн работа</div>
             </div>
             <div className="premium-stat-card">
-              <div className="text-4xl font-bold premium-gradient-text">iOS 15+</div>
-              <div className="text-white/60">Поддерживаемые версии</div>
+              <div className="text-4xl font-bold premium-gradient-text">0₽</div>
+              <div className="text-white/60">Навсегда бесплатно</div>
             </div>
           </div>
 
@@ -198,12 +190,12 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-20 slide-up">
             <h2 className="text-6xl md:text-7xl font-black mb-8 premium-heading">
-              <span className="premium-gradient-text">Премиум</span>
+              <span className="premium-gradient-text">Уникальные</span>
               <br />
               <span className="text-white">возможности</span>
             </h2>
             <p className="text-2xl text-white/80 max-w-4xl mx-auto premium-body">
-              Технологии будущего уже сегодня в вашем iPhone
+              Бесплатное приложение с премиум качеством
             </p>
           </div>
 
@@ -262,67 +254,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Premium Pricing */}
-      <section id="pricing" className="relative z-10 px-6 py-32">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-20 slide-up">
-            <h2 className="text-6xl md:text-7xl font-black mb-8 premium-heading">
-              <span className="premium-gradient-text">Выберите</span>
-              <br />
-              <span className="text-white">тариф</span>
-            </h2>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <div className="premium-pricing-card p-8 text-center">
-              <h3 className="text-2xl font-bold mb-4 text-white">Базовый</h3>
-              <div className="text-4xl font-bold premium-gradient-text mb-6">Бесплатно</div>
-              <ul className="text-white/80 space-y-3 mb-8">
-                <li>✓ 5 долгов в месяц</li>
-                <li>✓ Базовое голосовое распознавание</li>
-                <li>✓ Простые напоминания</li>
-              </ul>
-              <button className="premium-button w-full py-4 rounded-2xl">
-                Начать бесплатно
-              </button>
-            </div>
-
-            <div className="premium-pricing-card-featured p-8 text-center relative">
-              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 px-6 py-2 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full text-white font-semibold">
-                Популярный
-              </div>
-              <h3 className="text-2xl font-bold mb-4 text-white">Премиум</h3>
-              <div className="text-4xl font-bold premium-gradient-text mb-6">₽299/мес</div>
-              <ul className="text-white/80 space-y-3 mb-8">
-                <li>✓ Неограниченное количество долгов</li>
-                <li>✓ Умная аналитика и рекомендации</li>
-                <li>✓ Продвинутое голосовое распознавание</li>
-                <li>✓ Умные напоминания</li>
-                <li>✓ Экспорт данных</li>
-              </ul>
-              <button className="premium-button-large w-full py-4 rounded-2xl">
-                Попробовать 7 дней бесплатно
-              </button>
-            </div>
-
-            <div className="premium-pricing-card p-8 text-center">
-              <h3 className="text-2xl font-bold mb-4 text-white">Бизнес</h3>
-              <div className="text-4xl font-bold premium-gradient-text mb-6">₽999/мес</div>
-              <ul className="text-white/80 space-y-3 mb-8">
-                <li>✓ Все возможности Премиум</li>
-                <li>✓ Командная аналитика</li>
-                <li>✓ API интеграции</li>
-                <li>✓ Приоритетная поддержка</li>
-                <li>✓ Белый лейбл</li>
-              </ul>
-              <button className="premium-button w-full py-4 rounded-2xl">
-                Связаться с продажами
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Premium Download Section */}
       <section id="download" className="relative z-10 px-6 py-32">
         <div className="max-w-7xl mx-auto text-center">
@@ -377,14 +308,13 @@ export default function HomePage() {
               <h3 className="text-2xl font-bold mb-6 premium-gradient-text">DeeDeep</h3>
               <p className="text-white/60 premium-body leading-relaxed">
                 Первое приложение для голосового управления долгами на iOS. 
-                Делаем финансы простыми и умными.
+                Бесплатно и оффлайн.
               </p>
             </div>
             <div>
               <h4 className="font-semibold mb-6 text-white text-lg">Продукт</h4>
               <ul className="space-y-3 text-white/60">
                 <li><a href="#features" className="hover:text-white transition-colors">Возможности</a></li>
-                <li><a href="#pricing" className="hover:text-white transition-colors">Тарифы</a></li>
                 <li><a href="#download" className="hover:text-white transition-colors">Скачать</a></li>
                 <li><a href="/privacy-policy" className="hover:text-white transition-colors">Конфиденциальность</a></li>
               </ul>

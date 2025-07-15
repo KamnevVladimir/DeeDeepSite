@@ -1,15 +1,11 @@
-import { motion } from 'framer-motion';
-
 export default function AboutPage() {
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Hero Section */}
       <section className="relative px-6 py-20">
         <div className="max-w-7xl mx-auto text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+          <div
+            className="max-w-7xl mx-auto text-center"
           >
             <h1 className="text-6xl md:text-8xl font-bold mb-6 apple-heading">
               <span className="apple-gradient-text">О нас</span>
@@ -17,7 +13,7 @@ export default function AboutPage() {
             <p className="text-xl md:text-2xl text-white/80 max-w-3xl mx-auto apple-body">
               Мы создаем будущее управления финансами с помощью искусственного интеллекта
             </p>
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -25,11 +21,8 @@ export default function AboutPage() {
       <section className="px-6 py-20">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
+            <div
+              className="max-w-7xl mx-auto"
             >
               <h2 className="text-4xl md:text-5xl font-bold mb-6 apple-heading">
                 <span className="apple-gradient-text">Наша миссия</span>
@@ -40,12 +33,8 @@ export default function AboutPage() {
               <p className="text-lg text-white/80 apple-body">
                 Наша команда состоит из экспертов в области машинного обучения, дизайна и финансов, которые работают над тем, чтобы сделать управление долгами максимально удобным.
               </p>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
+            </div>
+            <div
               className="apple-card p-8"
             >
               <div className="text-center">
@@ -72,7 +61,7 @@ export default function AboutPage() {
                   </li>
                 </ul>
               </div>
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>
@@ -80,11 +69,7 @@ export default function AboutPage() {
       {/* Team Section */}
       <section className="px-6 py-20">
         <div className="max-w-7xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
+          <div
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-6 apple-heading">
@@ -93,7 +78,7 @@ export default function AboutPage() {
             <p className="text-xl text-white/80 max-w-3xl mx-auto apple-body">
               Знакомьтесь с людьми, которые создают будущее финансовых технологий
             </p>
-          </motion.div>
+          </div>
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
@@ -115,12 +100,8 @@ export default function AboutPage() {
                 avatar: "🎨"
               }
             ].map((member, index) => (
-              <motion.div
+              <div
                 key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: index * 0.2 }}
-                viewport={{ once: true }}
                 className="apple-card p-8 text-center hover-lift"
               >
                 <div className="w-20 h-20 gradient-apple-purple rounded-full flex items-center justify-center text-3xl mx-auto mb-6">
@@ -129,7 +110,7 @@ export default function AboutPage() {
                 <h3 className="text-xl font-bold mb-2 text-white">{member.name}</h3>
                 <p className="text-blue-400 mb-4">{member.role}</p>
                 <p className="text-white/80 apple-body">{member.bio}</p>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -138,11 +119,7 @@ export default function AboutPage() {
       {/* Stats Section */}
       <section className="px-6 py-20">
         <div className="max-w-7xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
+          <div
             className="apple-card p-12 text-center"
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-12 apple-heading">
@@ -155,33 +132,25 @@ export default function AboutPage() {
                 { number: "50K+", label: "Долгов отслежено" },
                 { number: "99.9%", label: "Время работы" }
               ].map((stat, index) => (
-                <motion.div
+                <div
                   key={index}
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
-                  viewport={{ once: true }}
                   className="text-center"
                 >
                   <div className="text-4xl md:text-5xl font-bold apple-gradient-text mb-2">
                     {stat.number}
                   </div>
                   <div className="text-white/60">{stat.label}</div>
-                </motion.div>
+                </div>
               ))}
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
 
       {/* CTA Section */}
       <section className="px-6 py-20">
         <div className="max-w-4xl mx-auto text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
+          <div
             className="apple-card p-12"
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-6 apple-heading">
@@ -193,22 +162,18 @@ export default function AboutPage() {
               Станьте частью революции в управлении личными финансами
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
+              <button
                 className="apple-button px-8 py-4 text-lg rounded-full"
               >
                 Скачать приложение
-              </motion.button>
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
+              </button>
+              <button
                 className="apple-glass px-8 py-4 text-lg rounded-full hover-lift"
               >
                 Связаться с нами
-              </motion.button>
+              </button>
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
     </div>

@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+// Удалить: import { motion } from 'framer-motion';
 
 export default function DownloadPage() {
   // platforms, testimonials и остальной код полностью перенести из app/download/page.tsx
