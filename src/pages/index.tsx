@@ -106,14 +106,22 @@ export default function HomePage() {
       {/* Premium Navigation */}
       <nav className="relative z-10 px-6 py-8">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <div className="text-3xl font-bold premium-gradient-text slide-up">
-            DeeDeep
+          <div className="flex items-center space-x-8">
+            <div className="text-3xl font-bold premium-gradient-text slide-up">
+              DeeDeep
+            </div>
+            
+            <div className="hidden md:flex space-x-8 slide-up">
+              <a href="#features" className="text-white/80 hover:text-white transition-all duration-300 hover:scale-105">Возможности</a>
+              <a href="#testimonials" className="text-white/80 hover:text-white transition-all duration-300 hover:scale-105">Отзывы</a>
+              <a href="#download" className="text-white/80 hover:text-white transition-all duration-300 hover:scale-105">Скачать</a>
+              <a href="/contact" className="text-white/80 hover:text-white transition-all duration-300 hover:scale-105">Контакты</a>
+            </div>
           </div>
           
-          <div className="hidden md:flex space-x-8 slide-up">
-            <a href="#features" className="text-white/80 hover:text-white transition-all duration-300 hover:scale-105">Возможности</a>
-            <a href="#testimonials" className="text-white/80 hover:text-white transition-all duration-300 hover:scale-105">Отзывы</a>
-            <a href="#download" className="text-white/80 hover:text-white transition-all duration-300 hover:scale-105">Скачать</a>
+          <div className="hidden md:flex items-center space-x-6 text-sm text-white/60">
+            <a href="mailto:support@deedeep.ru" className="hover:text-white transition-colors">Поддержка</a>
+            <a href="mailto:feedback@deedeep.ru" className="hover:text-white transition-colors">Отзывы</a>
           </div>
         </div>
       </nav>
@@ -292,7 +300,7 @@ export default function HomePage() {
                 <div className="text-white/60">Ожидающих пользователей</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold premium-gradient-text">Q1 2024</div>
+                <div className="text-3xl font-bold premium-gradient-text">Август 2025</div>
                 <div className="text-white/60">Планируемый запуск</div>
               </div>
             </div>
@@ -323,7 +331,7 @@ export default function HomePage() {
               <h4 className="font-semibold mb-6 text-white text-lg">Компания</h4>
               <ul className="space-y-3 text-white/60">
                 <li><a href="#about" className="hover:text-white transition-colors">О нас</a></li>
-                <li><a href="#contact" className="hover:text-white transition-colors">Контакты</a></li>
+                <li><a href="/contact" className="hover:text-white transition-colors">Контакты</a></li>
                 <li><a href="/terms-of-service" className="hover:text-white transition-colors">Условия</a></li>
                 <li><a href="#careers" className="hover:text-white transition-colors">Карьера</a></li>
               </ul>
@@ -331,15 +339,15 @@ export default function HomePage() {
             <div>
               <h4 className="font-semibold mb-6 text-white text-lg">Поддержка</h4>
               <ul className="space-y-3 text-white/60">
-                <li><a href="#help" className="hover:text-white transition-colors">Помощь</a></li>
-                <li><a href="mailto:support@deedeep.ru" className="hover:text-white transition-colors">Email</a></li>
-                <li><a href="#chat" className="hover:text-white transition-colors">Чат</a></li>
+                <li><a href="mailto:support@deedeep.ru" className="hover:text-white transition-colors">Поддержка</a></li>
+                <li><a href="mailto:feedback@deedeep.ru" className="hover:text-white transition-colors">Отзывы</a></li>
+                <li><a href="mailto:dev@deedeep.ru" className="hover:text-white transition-colors">Разработка</a></li>
                 <li><a href="#status" className="hover:text-white transition-colors">Статус</a></li>
               </ul>
             </div>
           </div>
           <div className="mt-12 pt-8 border-t border-white/10 text-center text-white/40">
-            <p>&copy; 2024 DeeDeep. Все права защищены. Сделано с ❤️ в России</p>
+            <p>&copy; 2025 DeeDeep. Все права защищены. Сделано с ❤️ в России</p>
           </div>
         </div>
       </footer>
